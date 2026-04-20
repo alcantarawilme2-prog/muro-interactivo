@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+header {
+  background-color: #4267B2;
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.4em;
+}
+
+header button {
+  background: white;
+  color: #4267B2;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contenedor {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+.post {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.post h4 {
+  color: #4267B2;
+  margin-bottom: 6px;
+  font-size: 0.95em;
+}
+
+.post p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.post span {
+  font-size: 0.8em;
+  color: #999;
+  display: block;
+  margin-top: 8px;
+}
+
+.formulario {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95em;
+}
+
+.formulario textarea {
+  height: 80px;
+  resize: none;
+}
+
+.formulario button {
+  background-color: #4267B2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95em;
+  width: 100%;
+}
+
+.auth-box {
+  background: white;
+  border-radius: 10px;
+  padding: 24px;
+  max-width: 400px;
+  margin: 60px auto;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+
+.auth-box h2 {
+  margin-bottom: 16px;
+  color: #4267B2;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95em;
+}
+
+.auth-box button {
+  background-color: #4267B2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 0.95em;
+  margin-bottom: 8px;
+}
+
+.auth-box p {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  cursor: pointer;
+}
+
+.auth-box p span {
+  color: #4267B2;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-size: 0.85em;
+  margin-bottom: 8px;
+}

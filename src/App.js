@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import { auth } from './js/firebase';
+import { onAuthStateChanged } from 'firebase/auth';
+import Auth from './js/Auth';
+import Muro from './js/Muro';
 
 function App() {
+  const [usuario, setUsuario] = useState(null);
+  const [cargando, setCargando] = useState(true);
+
+  useEffect(() => {
+    const cancelar = onAuthStateChanged(auth, (user) => {
+      setUsuario(user);
+      setCargando(false);
+    });
+    return () => cancelar();
+  }, []);
+
+  if (cargando) return <p style={{ textAlign: 'center', marginTop: '40px' }}>Cargando...</p>;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {usuario ? <Muro usuario={usuario} /> : <Auth />}
     </div>
   );
 }
