@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Muro Interactivo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicacion web desarrollada con React y Firebase que permite a los usuarios publicar mensajes en un muro compartido.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- Ver publicaciones de todos los usuarios sin autenticacion
+- Crear cuenta de usuario con nombre, apellido y correo
+- Iniciar sesion
+- Publicar posts solo usuarios autenticados
 
-### `npm start`
+## Tecnologias
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Firebase Authentication
+- Cloud Firestore
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshot
 
-### `npm test`
+<img width="1906" height="811" alt="image" src="https://github.com/user-attachments/assets/a6c9cba7-aa32-439a-857d-99f8a0432c70" />
+Pantalla de inicio de sesión — Aquí el usuario puede ingresar su correo y contraseña para acceder al muro. Si no tiene cuenta puede hacer clic en Regístrate.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img width="1771" height="761" alt="image" src="https://github.com/user-attachments/assets/0e714f1e-8da7-40bb-826d-99ff86f362f4" />
+Pantalla de registro — En esta pantalla completo el formulario con mi nombre, apellido, correo y contraseña para crear mi cuenta en el muro interactivo.
 
-### `npm run build`
+<img width="1906" height="756" alt="image" src="https://github.com/user-attachments/assets/0507f6c7-7db1-4583-8dbd-6278c65d8d9d" />
+Pantalla del muro — Después de registrarme e iniciar sesión puedo ver todos los posts publicados y escribir nuevas publicaciones. Aquí se muestra mi primer post con mi nombre y la fecha en que lo publiqué.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img width="1912" height="960" alt="image" src="https://github.com/user-attachments/assets/9de73715-6d68-49cc-a0c7-b908687136b6" />
+Pantalla de publicación — Aquí puedo ver cómo los posts aparecen en tiempo real en el muro. Publiqué un nuevo mensaje que se muestra inmediatamente con mi nombre completo y la fecha y hora exacta de la publicación.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
